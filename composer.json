@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "viraj-nikam/clevertap",
+    "description": "Laravel package for clevertap.",
     "keywords": [
-        ":vendor_name",
+        "viraj-nikam",
         "laravel",
-        ":package_slug"
+        "clevertap"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/viraj-nikam/clevertap",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Viraj Nikam",
+            "email": "reachme@virajnikam.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "VirajNikam\\Clevertap\\": "src",
+            "VirajNikam\\Clevertap\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "VirajNikam\\Clevertap\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -61,10 +61,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "VirajNikam\\Clevertap\\ClevertapServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "Clevertap": "VirajNikam\\Clevertap\\Facades\\Clevertap"
             }
         }
     },

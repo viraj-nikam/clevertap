@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace VirajNikam\Clevertap;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use VirajNikam\Clevertap\Commands\ClevertapCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class ClevertapServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('clevertap')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_clevertap_table')
+            ->hasCommand(ClevertapCommand::class);
     }
 }
